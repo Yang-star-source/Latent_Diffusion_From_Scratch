@@ -15,6 +15,7 @@ There is 2 models to be trained , Variational AutoEncoders (VAE) and Diffusion U
 
 ### More Details
 Want to see the internal connections? 
+
 [📂 **Click here to browse all detailed flowcharts**](FlowChart/)
 
 ## Pre-trained Models
