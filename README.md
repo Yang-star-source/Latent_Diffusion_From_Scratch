@@ -9,7 +9,7 @@ An implementation of a Latent Diffusion Model (LDM) built from scratch using PyT
 *Generated samples using the custom trained model.*
 
 ## Architecture Overview
-* There is 2 models to be trained , Variational AutoEncoders (VAE) and Diffusion U-Net
+There is 2 models to be trained , Variational AutoEncoders (VAE) and Diffusion U-Net
 
 ![An Introduction of Model Architecture](images/introduction.png)
 
