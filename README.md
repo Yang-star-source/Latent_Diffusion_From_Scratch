@@ -26,7 +26,7 @@ You can download the trained weights from Google Drive:
 
 
 ## Codes Implementation
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Yang-star-source/Latent_Diffusion_from_scratch/blob/main/Latent_Diffusion_from_scratch.ipynb)
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Yang-star-source/Latent_Diffusion_From_Scratch/blob/main/Latent_Diffusion_From_Scratch.ipynb)
 
 ## Dataset 
 [Dataset from Kaggle](https://www.kaggle.com/datasets/andrewmvd/animal-faces)
