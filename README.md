@@ -14,13 +14,17 @@ There is 2 models to be trained , Variational AutoEncoders (VAE) and Diffusion U
 ![An Introduction of Model Architecture](images/introduction.png)
 
 ### More Details
-Want to see the internal connections? 
+Need flowchart for clearer explanation ?
 [**Click here to browse the architecture flowcharts**](FlowChart/)
 
 I have provided the source file for anyone who wants to study the architecture deeply or modify the diagrams.
 
 * **[Download Source File (.drawio)](FlowChart.drawio)**
 *(Note: To open this file, go to [app.diagrams.net](https://app.diagrams.net/) in your browser and drag-and-drop the file onto the canvas.)*
+
+To view my draft and notes when studying Latent Diffusion
+
+[View the Draft and Notes](https://1drv.ms/o/c/eae736d6f2d45eed/IgAV2N1tMUu1QaddKr_KNX88AeZ-4xvzktsisAO-h5fDtRE?e=DPCh6h)
 
 ## Pre-trained Models
 You can download the trained weights from Google Drive:
