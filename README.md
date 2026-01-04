@@ -2,7 +2,7 @@
 
 An implementation of a Latent Diffusion Model (LDM) built entirely from scratch using PyTorch.
 
-<p align="center">
+<p>
   <img src="images/sample_cat1.png" width="600" title="Generated Results">
 </p>
 
