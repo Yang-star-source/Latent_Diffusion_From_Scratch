@@ -15,8 +15,12 @@ There is 2 models to be trained , Variational AutoEncoders (VAE) and Diffusion U
 
 ### More Details
 Want to see the internal connections? 
+[**Click here to browse the architecture flowcharts**](FlowChart/)
 
-[📂 **Click here to browse the architecture flowcharts**](FlowChart/)
+I have provided the source file for anyone who wants to study the architecture deeply or modify the diagrams.
+
+* **[Download Source File (.drawio)](FlowChart.drawio)**
+*(Note: To open this file, go to [app.diagrams.net](https://app.diagrams.net/) in your browser and drag-and-drop the file onto the canvas.)*
 
 ## Pre-trained Models
 You can download the trained weights from Google Drive:
