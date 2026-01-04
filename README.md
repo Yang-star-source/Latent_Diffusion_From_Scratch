@@ -10,3 +10,4 @@ An implementation of a Latent Diffusion Model (LDM) built entirely from scratch 
 
 ## Architecture :
 
+![An Introduction of Model Architecture](images/introduction.png)
