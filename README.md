@@ -1,6 +1,6 @@
 # Latent Diffusion From Scratch
 
-An implementation of a Latent Diffusion Model (LDM) built from scratch using PyTorch.
+An implementation of Unconditional Image Generation , Latent Diffusion Model (LDM) built from scratch using PyTorch.
 
 <p>
   <img src="images/sample_cat1.png" width="600" title="Generated Results">
