@@ -18,7 +18,7 @@ There is 3 models to be trained , Variational AutoEncoders (VAE) , Unconditional
 
 The VAE is trained using a composite loss function that combines pixel-level accuracy, perceptual similarity, and latent space regularization:
 
-$$L_{VAE} = \lambda_{LPIPS} \mathcal{L}_{LPIPS} + \lambda_{KL} D_{KL}(q(z|x) \| p(z)) + \mathcal{L}_1 + \lambda_{adapt} \mathcal{L}_{GAN}$$
+$$L_{VAE} = \lambda_{LPIPS} \mathcal{L}_{LPIPS} + \lambda_{KL} D_{KL} + \mathcal{L}_1 + \lambda_{adapt} \mathcal{L}_{GAN}$$
 
 **Where:**
 * **$\mathcal{L}_{LPIPS}$**: Perceptual loss (Learned Perceptual Image Patch Similarity).
@@ -26,6 +26,7 @@ $$L_{VAE} = \lambda_{LPIPS} \mathcal{L}_{LPIPS} + \lambda_{KL} D_{KL}(q(z|x) \| 
 * **$\mathcal{L}_1$**: Mean Absolute Error (MAE) for pixel-wise reconstruction.
 * **$\mathcal{L}_{GAN}$**: Adversarial loss from the discriminator to improve image sharpness.
 * **$\lambda$**: Weighting factors for each loss component.
+* 
 *(Note: GAN Loss will dominate if not handle properly, luckily didn't happen in first time VAE training, but it does for my second try)*
 
 | **Unconditional** | **Text-Conditioned** |
