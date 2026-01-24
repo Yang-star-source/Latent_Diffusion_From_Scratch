@@ -26,7 +26,7 @@ $$L_{VAE} = \lambda_{LPIPS} \mathcal{L}_{LPIPS} + \lambda_{KL} D_{KL} + \mathcal
 * **$\mathcal{L}_1$**: Mean Absolute Error (MAE) for pixel-wise reconstruction.
 * **$\mathcal{L}_{GAN}$**: Adversarial loss from the discriminator to improve image sharpness.
 * **$\lambda$**: Weighting factors for each loss component.
-* 
+
 *(Note: GAN Loss will dominate if not handle properly, luckily didn't happen in first time VAE training, but it does for my second try)*
 
 | **Unconditional** | **Text-Conditioned** |
