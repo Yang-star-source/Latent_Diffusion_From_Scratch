@@ -5,7 +5,8 @@
 | **Unconditional Image Generation** | **Prompt : A cute orange cat with green eyes** |
 
 ## Architecture Overview
-There is 2 models to be trained , Variational AutoEncoders (VAE) and Diffusion U-Net
+There is 3 models to be trained , Variational AutoEncoders (VAE) , Unconditional Diffusion U-Net and Text-Conditioned Diffusion U-Net.
+Both Diffusion Unet use the same VAE during inference mode.
 
 ![An Introduction of Model Architecture](images/introduction.png)
 
