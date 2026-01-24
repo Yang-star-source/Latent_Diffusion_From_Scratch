@@ -6,7 +6,11 @@
 
 ## Architecture Overview
 There is 3 models to be trained , Variational AutoEncoders (VAE) , Unconditional Diffusion U-Net and Text-Conditioned Diffusion U-Net.
-Both Diffusion U-Net use the same VAE during inference mode.
+
+- Both Diffusion U-Net use the same VAE during inference mode.
+- Animal faces dataset (AFHQv2 512×512) was used in this training.
+- Image Captioning was produced from Florence-2.
+- Text Embedding was produced from CLIP Embedding.
 
 <img src="images/introduction1.png" width="60%">
 
@@ -32,24 +36,20 @@ To view my draft and notes when studying Latent Diffusion :
 
 *(Note: The codes wrote inside notes might be differ with the actual implementing codes)*
 
-## Pre-trained Models
-You can download the trained weights from Google Drive:
-
-* **[Download Pre-trained Weights Folder](https://drive.google.com/drive/folders/1EbwM13No2i44OCQbxzMkeORkeEqaT9IU?usp=sharing)**
-  * `checkpoint.pth` (VAE Autoencoder)
-  * `unet_epoch_500.pth` (Diffusion Model)
-
-**Setup:**
-1. Download both files.
-2. Place them inside your project folder (or upload to Colab).
-
 
 ## Codes Implementation
-For training code (Just View) :
+For Training VAE + Unconditional Diffusion-UNet:
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Yang-star-source/Latent_Diffusion_From_Scratch/blob/main/Latent_Diffusion_From_Scratch.ipynb)
 
-For Inference Mode (One Click Run):
+For Unconditional Image Generation Inference Mode (One Click Run):
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Yang-star-source/Latent_Diffusion_From_Scratch/blob/main/Latent_Diffusion_From_Scratch_Inference.ipynb)
+
+For Training Text-Conditioned Diffusion-UNet:
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Yang-star-source/Latent_Diffusion_From_Scratch/blob/main/LDM_T2I_Training.ipynb)
+
+For Text-Conditioned Image Generation Inference Mode (One Click Run):
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Yang-star-source/Latent_Diffusion_From_Scratch/blob/main/LDM_T2I_Inference.ipynb)
+
 
 ## Dataset 
 ```bibtex
@@ -61,9 +61,20 @@ For Inference Mode (One Click Run):
 }
 ```
 
+```bibtex
+@article{xiao2023florence,
+  title={Florence-2: Advancing a unified representation for a variety of vision tasks},
+  author={Xiao, Bin and Wu, Haiping and Xu, Weijian and Dai, Xiyang and Hu, Houdong and Lu, Yumao and Zeng, Michael and Liu, Ce and Yuan, Lu},
+  journal={arXiv preprint arXiv:2311.06242},
+  year={2023}
+}
+```
+
 [Dataset from Kaggle](https://www.kaggle.com/datasets/andrewmvd/animal-faces)
 
 [CATS ONLY used in this training](https://huggingface.co/datasets/ziyang06315/cats_images_dataset/tree/main)
+
+*(Note: Training dataset only use 5558 cat images)*
 
 ## Study Resources
 
@@ -75,8 +86,11 @@ For Inference Mode (One Click Run):
 ### Articles
 * **Diffusion Model from Scratch** - [Hugging Face](https://huggingface.co/learn/diffusion-course/unit1/3)
 * **KL Divergence** - [GeeksforGeeks](https://www.geeksforgeeks.org/machine-learning/kullback-leibler-divergence/)
+* **Florence-2 Tutorial** -[Hugging Face](https://huggingface.co/microsoft/Florence-2-large/blob/main/sample_inference.ipynb)
+* **CLIP Embedding Documentation** -[Hugging Face](https://huggingface.co/docs/transformers/model_doc/clip)
 
 ### Videos
 * [Diffusion Models: DDPM | Generative AI Animated](https://www.youtube.com/watch?v=EhndHhIvWWw) – Excellent visualization of the forward/reverse process.
 * [The Key Equation Behind Probability](https://www.youtube.com/watch?v=KHVR587oW8I) (Artem Kirsanov) – Essential for understanding the entropy/KL-divergence math.
 * [Attention in transformers, step-by-step](https://www.3blue1brown.com/lessons/attention) (3Blue1Brown) – Visual breakdown of the Attention Mechanism.
+
