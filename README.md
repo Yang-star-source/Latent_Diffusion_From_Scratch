@@ -13,7 +13,7 @@ Both Diffusion U-Net use the same VAE during inference mode.
 | **Unconditional** | **Text-Conditioned** |
 | :---: | :---: |
 | ![Uncondition](images/introduction2.png) | ![Condition](images/introduction3.png) |
-| ![UnconditionLoss](images/Uncondition_Loss.png) | ![ConditionLoss](images/TextCondition_Loss.png) |
+| ![UnconditionLoss](images/UnCondition_Loss.png) | ![ConditionLoss](images/TextCondition_Loss.png) |
 
 ## More Details Architecture Explanation
 Need flowchart for clearer explanation ?
