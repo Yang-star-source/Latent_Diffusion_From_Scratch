@@ -1,12 +1,8 @@
-# Latent Diffusion From Scratch
-
-An implementation of Unconditional Image Generation and Text-To-Image (T2I) Generation, Latent Diffusion Model (LDM) built from scratch using PyTorch.
+# Latent Diffusion From Scratch: Unconditional and Text-to-Image (T2I) Generation.
 
 |![Cat Grid 1](images/sample_cat1.png)|![Cat Grid 2](images/ImageSampling800.png)|
 | :---: | :---: |
 | **Unconditional Image Generation** | **Prompt : A cute orange cat with green eyes** |
-
-*Generated samples using the custom trained model.*
 
 ## Architecture Overview
 There is 2 models to be trained , Variational AutoEncoders (VAE) and Diffusion U-Net
