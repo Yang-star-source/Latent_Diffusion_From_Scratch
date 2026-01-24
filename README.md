@@ -2,10 +2,9 @@
 
 An implementation of Unconditional Image Generation and Text-To-Image (T2I) Generation, Latent Diffusion Model (LDM) built from scratch using PyTorch.
 
-<p>
-  <img src="images/sample_cat1.png" width="300" title="Unconditional">
-  <img src="images/ImageSampling800.png" width="300" title="A cute orange cat with green eyes">
-</p>
+|![Cat Grid 1](images/sample_cat1.png)|![Cat Grid 2](images/ImageSampling800.png)|
+| :---: | :---: |
+| **Unconditional** | **A cute orange cat with green eyes** |
 
 *Generated samples using the custom trained model.*
 
