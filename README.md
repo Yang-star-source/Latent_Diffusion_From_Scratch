@@ -12,16 +12,8 @@ Both Diffusion U-Net use the same VAE during inference mode.
 
 | **Unconditional** | **Text-Conditioned** |
 | :---: | :---: |
-| ![Uncondition](images/introduction2.png) | ![condition](images/introduction3.png) |
-| $L = \mathbb{E}_{z, \epsilon, t} [ \| \epsilon - \epsilon_\theta(z_t, t) \|^2 ]$ | $L = \mathbb{E}_{z, y, \epsilon, t} [ \| \epsilon - \epsilon_\theta(z_t, t, c) \|^2 ]$ |
-
-**Unconditional Loss:**
-
-$$L = \mathbb{E}_{z, \epsilon, t} [ \| \epsilon - \epsilon_\theta(z_t, t) \|^2 ]$$
-
-**Text-Conditioned Loss:**
-
-$$L = \mathbb{E}_{z, y, \epsilon, t} [ \| \epsilon - \epsilon_\theta(z_t, t, c) \|^2 ]$$
+| ![Uncondition](images/introduction2.png) | ![Condition](images/introduction3.png) |
+| ![UnconditionLoss](images/UnconditionLoss.png) | ![ConditionLoss](images/TextConditionLoss.png) |
 
 ## More Details Architecture Explanation
 Need flowchart for clearer explanation ?
