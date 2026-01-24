@@ -9,11 +9,11 @@ There is 3 models to be trained , Variational AutoEncoders (VAE) , Unconditional
 Both Diffusion U-Net use the same VAE during inference mode.
 
 <div align="center">
-  
-| **Uncondition** | **Text-Conditioned** |
+
+| **Unconditional** | **Text-Conditioned** |
 | :---: | :---: |
-| ![VAE AND LATENTS](images/introduction1.png)| |
-| ![Uncondition](images/introduction2.png)| ![condition](images/introduction3.png) |
+| ![VAE AND LATENTS](images/introduction1.png) | |
+| ![Uncondition](images/introduction2.png) | ![condition](images/introduction3.png) |
 
 </div>
 ![An Introduction of Model Architecture](images/introduction.png)
