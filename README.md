@@ -12,7 +12,19 @@ There is 3 models to be trained , Variational AutoEncoders (VAE) , Unconditional
 - Image Captioning was produced from Florence-2.
 - Text Embedding was produced from CLIP Embedding.
 
-<img src="images/introduction1.png" width="60%">
+<img src="images/introduction1.png" width="50%">
+### VAE Training Loss
+
+The VAE is trained using a composite loss function that combines pixel-level accuracy, perceptual similarity, and latent space regularization:
+
+$$L_{VAE} = \lambda_{LPIPS} \mathcal{L}_{LPIPS} + \lambda_{KL} D_{KL}(q(z|x) \| p(z)) + \mathcal{L}_1 + \lambda_{adapt} \mathcal{L}_{GAN}$$
+
+**Where:**
+* **$\mathcal{L}_{LPIPS}$**: Perceptual loss (Learned Perceptual Image Patch Similarity).
+* **$D_{KL}$**: Kullback–Leibler divergence to regularize the latent space.
+* **$\mathcal{L}_1$**: Mean Absolute Error (MAE) for pixel-wise reconstruction.
+* **$\mathcal{L}_{GAN}$**: Adversarial loss from the discriminator to improve image sharpness.
+* **$\lambda$**: Weighting factors for each loss component.
 
 | **Unconditional** | **Text-Conditioned** |
 | :---: | :---: |
