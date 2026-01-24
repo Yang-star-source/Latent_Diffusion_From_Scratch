@@ -4,7 +4,7 @@ An implementation of Unconditional Image Generation and Text-To-Image (T2I) Gene
 
 |![Cat Grid 1](images/sample_cat1.png)|![Cat Grid 2](images/ImageSampling800.png)|
 | :---: | :---: |
-| **Unconditional** | **A cute orange cat with green eyes** |
+| **Unconditional Image Generation** | **Prompt :A cute orange cat with green eyes** |
 
 *Generated samples using the custom trained model.*
 
