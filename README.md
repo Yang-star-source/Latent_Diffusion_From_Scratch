@@ -1,9 +1,10 @@
 # Latent Diffusion From Scratch
 
-An implementation of Unconditional Image Generation , Latent Diffusion Model (LDM) built from scratch using PyTorch.
+An implementation of Unconditional Image Generation and Text-To-Image (T2I) Generation, Latent Diffusion Model (LDM) built from scratch using PyTorch.
 
 <p>
-  <img src="images/sample_cat1.png" width="600" title="Generated Results">
+  <img src="images/sample_cat1.png" width="600" title="Unconditional">
+  <img src="images/ImageSampling800.png" width="600" title="A cute orange cat with green eyes">
 </p>
 
 *Generated samples using the custom trained model.*
