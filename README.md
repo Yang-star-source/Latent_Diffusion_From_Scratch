@@ -12,7 +12,7 @@ Both Diffusion U-Net use the same VAE during inference mode.
   
 | **Uncondition** | **Text-Conditioned** |
 | :---: | :---: |
-| ![VAE AND LATENTS](images/introduction1.png)|
+| ![VAE AND LATENTS](images/introduction1.png)| |
 | ![Uncondition](images/introduction2.png)| ![condition](images/introduction3.png) |
 
 </div>
