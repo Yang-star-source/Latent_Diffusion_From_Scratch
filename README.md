@@ -8,7 +8,7 @@
 There is 3 models to be trained , Variational AutoEncoders (VAE) , Unconditional Diffusion U-Net and Text-Conditioned Diffusion U-Net.
 
 - Both Diffusion U-Net use the same VAE during inference mode.
-- Animal faces dataset (AFHQv2 512×512) was used in this training.
+- Animal faces dataset (AFHQv2 256x256) was used in this training.
 - Image Captioning was produced from Florence-2.
 - Text Embedding was produced from CLIP Embedding.
 
